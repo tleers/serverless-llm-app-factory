@@ -3,13 +3,12 @@
 This is built on the much ![simpler design pattern of combining FastAPI & LangChain to create an LLM-powered microservice](https://github.com/tleers/llm-api-starterkit). 
 If you're curious what the basic principle of that design pattern constitutes, I recommend you read https://blog.timleers.com/a-stupidly-minimal-llm-api-starterkit-deploy-llm-endpoints-in-a-minute-with-langchain-and-fastapi.
 
-This 
-
+For a comprehensive guide, take a look at 
 # Installation
 
 ## Development
 
-![Poetry installation](https://python-poetry.org/docs/#installing-with-the-official-installer) is recommended.
+[Poetry installation](https://python-poetry.org/docs/#installing-with-the-official-installer) is recommended.
 To start:
 ```bash
 poetry shell
