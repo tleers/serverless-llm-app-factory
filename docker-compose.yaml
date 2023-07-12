@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  todo-extractor-fastapi:
+    build:
+      dockerfile: ./apps/todo_extractor/fastapi.Dockerfile
+      context: ./
+    ports:
+      - '8000:8000'
+    environment:
+      - REPLICATE_API_TOKEN
+  todo-extractor-chainlit:
+    build:
+      dockerfile: ./apps/todo_extractor/chainlit.Dockerfile
+      context: ./
+    ports:
+      - '8000:8000'
+    environment:
+      - REPLICATE_API_TOKEN
