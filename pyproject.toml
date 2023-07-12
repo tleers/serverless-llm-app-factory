@@ -8,10 +8,12 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 langchain = "^0.0.198"
-fastapi = "^0.97.0"
+fastapi = "0.96.0"
 uvicorn = "^0.22.0"
-python-dotenv = "^1.0.0"
 replicate = "^0.8.3"
+python-dotenv = "^1.0.0"
+python-multipart = "^0.0.6"
+chainlit = "^0.4.101"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
