@@ -1,8 +1,8 @@
 # serverless-llm-app-factory
 
-__Not yet another LLM python package.__
+__Not yet another LLM python package.__ At this point in time, there's 
 
-This repository serves as a starting point to churn out serverless LLM web applications in minutes.
+This repository serves as a starting point to churn out serverless LLM web applications.
 
 You're just getting started with LLMs or APIs? Take a look at the ["stupidly minimal guide"](https://blog.timleers.com/a-stupidly-minimal-llm-api-starterkit-deploy-llm-endpoints-in-a-minute-with-langchain-and-fastapi) accompanying [`llm-api-starterkit`](https://github.com/tleers/llm-api-starterkit) and return here afterwards.
 
@@ -14,17 +14,17 @@ You're just getting started with LLMs or APIs? Take a look at the ["stupidly min
 
 ## __Premise__
 
-Building and deploying new AI products to end-users is possible in minutes, if we leverage LLMs & serverless.
+Building and deploying new AI products to end-users is possible in minutes, if we leverage LLMs and managed serverless services.
 
 Building an AI product used to consist of three great obstacles on the technical domain: 
 
-__(1)__ Data Preparation & Governance
+__(1)__ Data preparation & governance
 
-__(2)__ Model Development
+__(2)__ Model development & management
 
-__(3)__ Deployment
+__(3)__ Deployment (& maintenance)
 
-With the ability of large language models (LLMs) to do zero-shot and few-shot learning from examples without application-specific training, it's possible to build new AI products in a couple of minutes, skipping model development if we assume:
+With the ability of large language models (LLMs) to do zero-shot and few-shot learning from examples without context-specific training, it's possible to build new AI products in a couple of minutes, skipping model development if we assume:
 
 __(1) data is ready and/or static, or not needed for our product__,
 
@@ -34,14 +34,14 @@ __we use a service to help us manage (3) deployment__
 
 In this repository, I __focus on (3) deployment__.
 
-We leverage a simple design pattern from [`llm-api-starterkit`](https://github.com/tleers/llm-api-starterkit) using LangChain & FastAPI for (2) model development.
+We leverage a simple design pattern from [`llm-api-starterkit`](https://github.com/tleers/llm-api-starterkit) using LangChain & FastAPI for model development.
 
 __Deployment__ needs resources for back-end & front-end: 
 
 We use back-end resources from __[Replicate](https://replicate.com/)__, a serverless model endpoint service, for the following key reasons:
 
-* __Use any open-source LLM__: You can implement or adapt any existing open-source model and deploy it on Replicate with the fantastic cog template. Never mind, someone has likely already beat you to it, and you can leverage their implementation
-* __Free of charge__: Just log in with GitHub, and you can use a limited amount of compute for free, ideal for getting started (unclear how much, never hit it with simple development)
+* __Use any open-source LLM__: You can implement or adapt any existing open-source model and deploy it on Replicate with the fantastic cog template. Never mind, someone has likely already beat you to it, and you can leverage their implementation of the latest LLM flavour.
+* __Free of charge__: Just log in with GitHub, and you can use a limited amount of compute for free, ideal for getting started (unclear how much, never hit a limit with simple development)
 * __Extremely beginner-friendly__: Using the LangChain integration, all you need to do is __[explore](https://replicate.com/explore) the model hub__ and copy the endpoint link into your application
 
 Other considerations:
@@ -75,7 +75,7 @@ the `middleware` deployed on `fly.io` containing business logic is leveraging th
 
 * On top of that, we use no CI/CD, pre-commits, tests, anything slowing us down from deploying a first prototype or making sure our app is maintainable. Not recommended.
 
-For a comprehensive guide to LLMOps, best practices & enterprise deployment... you'll have to wait until https://github.com/tleers/servelm is completed. 
+For a comprehensive guide to LLMOps, best practices & enterprise deployment... you'll have to wait until https://github.com/tleers/servelm is completed---or until someone else on the internet decides to invest their time into this :)
 
 ## __Reference implementations__
 
